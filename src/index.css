@@ -7,21 +7,21 @@
 @layer base {
   :root {
     /* Base colors */
-    --background: 248 250 252;
-    --foreground: 226 232 240;
+    --background: 210 40% 98%;
+    --foreground: 210 15% 25%;
     
     /* Card system */
-    --card: 255 255 255;
-    --card-foreground: 51 65 85;
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 25%;
     
     /* Interactive elements */
-    --popover: 255 255 255;
-    --popover-foreground: 51 65 85;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 25%;
     
     /* Primary brand - Ocean blue */
-    --primary: 200 85% 70%;
-    --primary-foreground: 200 100% 98%;
-    --primary-glow: 200 75% 80%;
+    --primary: 210 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 75% 75%;
     
     /* Secondary - Sage green */
     --secondary: 150 25% 85%;
@@ -37,18 +37,18 @@
     
     /* Status colors */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 255 255 255;
+    --destructive-foreground: 0 0% 100%;
     --success: 142 76% 36%;
-    --success-foreground: 255 255 255;
+    --success-foreground: 0 0% 100%;
     
     /* Interactive elements */
-    --border: 200 20% 88%;
-    --input: 255 255 255;
-    --ring: 200 85% 70%;
+    --border: 210 20% 88%;
+    --input: 0 0% 100%;
+    --ring: 210 85% 65%;
     
     /* Chat specific colors */
-    --chat-user: 200 85% 70%;
-    --chat-user-foreground: 200 100% 98%;
+    --chat-user: 210 85% 65%;
+    --chat-user-foreground: 0 0% 100%;
     --chat-assistant: 150 30% 92%;
     --chat-assistant-foreground: 150 40% 25%;
     
@@ -89,17 +89,17 @@
   .dark {
     /* Dark mode colors for chat */
     --background: 222 47% 7%;
-    --foreground: 226 232 240;
+    --foreground: 210 15% 85%;
     
     --card: 222 47% 9%;
-    --card-foreground: 226 232 240;
+    --card-foreground: 210 15% 85%;
     
     --popover: 222 47% 9%;
-    --popover-foreground: 226 232 240;
+    --popover-foreground: 210 15% 85%;
     
-    --primary: 200 75% 65%;
-    --primary-foreground: 200 100% 98%;
-    --primary-glow: 200 65% 75%;
+    --primary: 210 75% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 65% 75%;
     
     --secondary: 222 47% 12%;
     --secondary-foreground: 150 25% 80%;
@@ -111,16 +111,16 @@
     --accent-foreground: 175 35% 75%;
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 255 255 255;
+    --destructive-foreground: 0 0% 100%;
     --success: 142 76% 36%;
-    --success-foreground: 255 255 255;
+    --success-foreground: 0 0% 100%;
     
     --border: 222 47% 15%;
     --input: 222 47% 12%;
-    --ring: 200 75% 65%;
+    --ring: 210 75% 65%;
     
-    --chat-user: 200 75% 65%;
-    --chat-user-foreground: 200 100% 98%;
+    --chat-user: 210 75% 65%;
+    --chat-user-foreground: 0 0% 100%;
     --chat-assistant: 150 20% 15%;
     --chat-assistant-foreground: 150 30% 75%;
   }
