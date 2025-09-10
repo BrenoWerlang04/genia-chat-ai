@@ -20,7 +20,7 @@ export const ChatContainer = () => {
 
   return (
     <div className="flex flex-col h-screen max-w-4xl mx-auto bg-background">
-      <ChatHeader onClearChat={clearChat} />
+      <ChatHeader />
       
       <div className="flex-1 relative">
         <ScrollArea className="h-full">

@@ -18,22 +18,22 @@
     --popover: 255 255 255;
     --popover-foreground: 51 65 85;
     
-    /* Primary brand - E-commerce blue/violet */
-    --primary: 239 68% 68%;
-    --primary-foreground: 255 255 255;
-    --primary-glow: 239 84% 78%;
+    /* Primary brand - Pastel lavender */
+    --primary: 260 60% 85%;
+    --primary-foreground: 260 15% 25%;
+    --primary-glow: 260 70% 90%;
     
-    /* Secondary - Neutral professional */
-    --secondary: 226 232 240;
-    --secondary-foreground: 51 65 85;
+    /* Secondary - Pastel mint */
+    --secondary: 160 60% 90%;
+    --secondary-foreground: 160 20% 30%;
     
     /* Muted - Subtle backgrounds */
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
     
-    /* Accent - Chat highlights */
-    --accent: 220 91% 95%;
-    --accent-foreground: 239 68% 68%;
+    /* Accent - Pastel peach */
+    --accent: 20 60% 92%;
+    --accent-foreground: 260 60% 85%;
     
     /* Status colors */
     --destructive: 0 84% 60%;
@@ -47,10 +47,10 @@
     --ring: 239 68% 68%;
     
     /* Chat specific colors */
-    --chat-user: 239 68% 68%;
-    --chat-user-foreground: 255 255 255;
-    --chat-assistant: 255 255 255;
-    --chat-assistant-foreground: 51 65 85;
+    --chat-user: 260 60% 85%;
+    --chat-user-foreground: 260 15% 25%;
+    --chat-assistant: 160 50% 95%;
+    --chat-assistant-foreground: 160 20% 30%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
@@ -97,9 +97,9 @@
     --popover: 222 47% 9%;
     --popover-foreground: 226 232 240;
     
-    --primary: 239 68% 68%;
-    --primary-foreground: 255 255 255;
-    --primary-glow: 239 84% 78%;
+    --primary: 260 60% 85%;
+    --primary-foreground: 260 15% 25%;
+    --primary-glow: 260 70% 90%;
     
     --secondary: 222 47% 12%;
     --secondary-foreground: 226 232 240;
@@ -119,10 +119,10 @@
     --input: 222 47% 12%;
     --ring: 239 68% 68%;
     
-    --chat-user: 239 68% 68%;
-    --chat-user-foreground: 255 255 255;
-    --chat-assistant: 222 47% 12%;
-    --chat-assistant-foreground: 226 232 240;
+    --chat-user: 260 60% 85%;
+    --chat-user-foreground: 260 15% 25%;
+    --chat-assistant: 160 30% 20%;
+    --chat-assistant-foreground: 160 50% 85%;
   }
 }
 
