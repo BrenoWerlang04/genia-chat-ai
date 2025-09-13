@@ -15,20 +15,33 @@ interface UseChatReturn {
   clearChat: () => void;
 }
 
-// Mock API service para CrewAI
+// API service para CrewAI
 const sendToCrewAI = async (message: string): Promise<string> => {
-  // Simula delay da API
-  await new Promise(resolve => setTimeout(resolve, 2000 + Math.random() * 1000));
-  
-  // Mock de respostas do CrewAI baseadas em e-commerce
-  const responses = [
-    `Entendo que você está procurando ajuda com ${message.toLowerCase()}. Como assistente de e-commerce, posso te auxiliar com recomendações de produtos, informações sobre pedidos, ou qualquer dúvida sobre nossa loja.`,
-    `Ótima pergunta! Baseado na sua solicitação sobre "${message}", posso sugerir algumas opções que temos disponíveis em nossa loja. Você gostaria de ver produtos relacionados?`,
-    `Analisando sua mensagem, vejo que você está interessado em "${message}". Nossa equipe de IA processou sua solicitação e encontrou algumas sugestões personalizadas para você.`,
-    `Obrigado por sua pergunta sobre "${message}". Como seu assistente de compras inteligente, posso te ajudar a encontrar exatamente o que precisa em nosso catálogo.`
-  ];
-  
-  return responses[Math.floor(Math.random() * responses.length)];
+  try {
+    const response = await fetch('http://127.0.0.1:8000/run', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        solicitacao: message
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erro na API: ${response.status}`);
+    }
+
+    const data = await response.json();
+    
+    // Assumindo que a resposta vem em um campo específico
+    // Ajuste conforme a estrutura de resposta do seu endpoint
+    return data.resposta || data.message || data.content || JSON.stringify(data);
+    
+  } catch (error) {
+    console.error('Erro ao comunicar com CrewAI:', error);
+    throw new Error('Não foi possível conectar com o sistema de agentes. Verifique se o servidor está rodando.');
+  }
 };
 
 export const useChat = (): UseChatReturn => {
